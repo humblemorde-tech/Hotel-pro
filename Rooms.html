@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOTELPRO | Rooms</title>
+
+    <link rel="stylesheet" href="css/rooms.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+<!-- Sidebar -->
+<div class="sidebar">
+    <div class="logo">
+        <h2>🏨 HOTELPRO</h2>
+    </div>
+
+    <ul>
+        <li><a href="dashboard.html"><i class="fa-solid fa-chart-line"></i> Dashboard</a></li>
+        <li class="active"><a href="rooms.html"><i class="fa-solid fa-bed"></i> Rooms</a></li>
+        <li><a href="reservations.html"><i class="fa-solid fa-calendar-check"></i> Reservations</a></li>
+        <li><a href="guests.html"><i class="fa-solid fa-users"></i> Guests</a></li>
+        <li><a href="restaurant.html"><i class="fa-solid fa-utensils"></i> Restaurant</a></li>
+        <li><a href="housekeeping.html"><i class="fa-solid fa-broom"></i> Housekeeping</a></li>
+        <li><a href="staff.html"><i class="fa-solid fa-user-tie"></i> Staff</a></li>
+        <li><a href="payments.html"><i class="fa-solid fa-credit-card"></i> Payments</a></li>
+        <li><a href="reports.html"><i class="fa-solid fa-chart-pie"></i> Reports</a></li>
+        <li><a href="notifications.html"><i class="fa-solid fa-bell"></i> Notifications</a></li>
+        <li><a href="settings.html"><i class="fa-solid fa-gear"></i> Settings</a></li>
+        <li><a href="profile.html"><i class="fa-solid fa-user"></i> Profile</a></li>
+        <li><a href="login.html"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
+    </ul>
+</div>
+
+<!-- Main -->
+<div class="main">
+
+    <!-- Header -->
+    <header>
+        <div>
+            <h1>Room Management</h1>
+            <p>Manage all hotel rooms.</p>
+        </div>
+
+        <button class="add-btn">
+            <i class="fa-solid fa-plus"></i> Add Room
+        </button>
+    </header>
+
+    <!-- Statistics -->
+    <section class="stats">
+
+        <div class="card">
+            <i class="fa-solid fa-bed"></i>
+            <h2>120</h2>
+            <p>Total Rooms</p>
+        </div>
+
+        <div class="card">
+            <i class="fa-solid fa-door-open"></i>
+            <h2>75</h2>
+            <p>Available</p>
+        </div>
+
+        <div class="card">
+            <i class="fa-solid fa-user-check"></i>
+            <h2>38</h2>
+            <p>Occupied</p>
+        </div>
+
+        <div class="card">
+            <i class="fa-solid fa-broom"></i>
+            <h2>7</h2>
+            <p>Cleaning</p>
+        </div>
+
+    </section>
+
+    <!-- Search -->
+    <section class="search-box">
+
+        <input type="text" placeholder="Search room number...">
+
+        <select>
+            <option>All Types</option>
+            <option>Single</option>
+            <option>Double</option>
+            <option>Deluxe</option>
+            <option>Suite</option>
+        </select>
+
+        <button>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            Search
+        </button>
+
+    </section>
+
+    <!-- Room Table -->
+    <section class="table-container">
+
+        <table>
+
+            <thead>
+
+            <tr>
+                <th>Room</th>
+                <th>Type</th>
+                <th>Price</th>
+                <th>Status</th>
+                <th>Floor</th>
+                <th>Guest</th>
+                <th>Actions</th>
+            </tr>
+
+            </thead>
+
+            <tbody id="roomTable">
+
+            <tr>
+                <td>101</td>
+                <td>Single</td>
+                <td>$80</td>
+                <td><span class="available">Available</span></td>
+                <td>1</td>
+                <td>-</td>
+                <td>
+                    <button class="edit">
+                        <i class="fa-solid fa-pen"></i>
+                    </button>
+
+                    <button class="delete">
+                        <i class="fa-solid fa-trash"></i>
+                    </button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>204</td>
+                <td>Deluxe</td>
+                <td>$180</td>
+                <td><span class="occupied">Occupied</span></td>
+                <td>2</td>
+                <td>John Doe</td>
+                <td>
+                    <button class="edit">
+                        <i class="fa-solid fa-pen"></i>
+                    </button>
+
+                    <button class="delete">
+                        <i class="fa-solid fa-trash"></i>
+                    </button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>305</td>
+                <td>Suite</td>
+                <td>$320</td>
+                <td><span class="cleaning">Cleaning</span></td>
+                <td>3</td>
+                <td>-</td>
+                <td>
+                    <button class="edit">
+                        <i class="fa-solid fa-pen"></i>
+                    </button>
+
+                    <button class="delete">
+                        <i class="fa-solid fa-trash"></i>
+                    </button>
+                </td>
+            </tr>
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+</div>
+
+<script src="js/rooms.js"></script>
+
+</body>
+      </html>
