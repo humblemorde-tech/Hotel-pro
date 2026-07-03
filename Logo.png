@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+  <rect width="300" height="300" rx="40" fill="#0F766E"/>
+  <text x="150" y="120"
+        text-anchor="middle"
+        font-size="80"
+        font-family="Arial, sans-serif"
+        font-weight="bold"
+        fill="#FFFFFF">H</text>
+  <text x="150" y="180"
+        text-anchor="middle"
+        font-size="28"
+        font-family="Arial, sans-serif"
+        font-weight="bold"
+        fill="#FACC15">HOTELPRO</text>
+  <text x="150" y="215"
+        text-anchor="middle"
+        font-size="16"
+        font-family="Arial, sans-serif"
+        fill="#E5E7EB">Hotel Management</text>
+</svg>
