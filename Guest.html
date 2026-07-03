@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HotelPro | Guests</title>
+
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/guests.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <h2>🏨 HotelPro</h2>
+        </div>
+
+        <ul>
+            <li><a href="dashboard.html"><i class="fas fa-home"></i> Dashboard</a></li>
+            <li><a href="rooms.html"><i class="fas fa-bed"></i> Rooms</a></li>
+            <li><a href="reservations.html"><i class="fas fa-calendar-check"></i> Reservations</a></li>
+            <li class="active"><a href="guests.html"><i class="fas fa-users"></i> Guests</a></li>
+            <li><a href="restaurant.html"><i class="fas fa-utensils"></i> Restaurant</a></li>
+            <li><a href="housekeeping.html"><i class="fas fa-broom"></i> Housekeeping</a></li>
+            <li><a href="staff.html"><i class="fas fa-user-tie"></i> Staff</a></li>
+            <li><a href="payments.html"><i class="fas fa-credit-card"></i> Payments</a></li>
+            <li><a href="reports.html"><i class="fas fa-chart-line"></i> Reports</a></li>
+            <li><a href="notifications.html"><i class="fas fa-bell"></i> Notifications</a></li>
+            <li><a href="settings.html"><i class="fas fa-cog"></i> Settings</a></li>
+            <li><a href="profile.html"><i class="fas fa-user-circle"></i> Profile</a></li>
+        </ul>
+
+    </aside>
+
+    <!-- Main -->
+    <main class="content">
+
+        <header>
+
+            <h1>Guest Management</h1>
+
+            <div class="header-right">
+
+                <input
+                    type="text"
+                    id="searchGuest"
+                    placeholder="Search guest..."
+                >
+
+                <button id="addGuest">
+                    <i class="fas fa-plus"></i>
+                    Add Guest
+                </button>
+
+            </div>
+
+        </header>
+
+        <!-- Statistics -->
+
+        <section class="cards">
+
+            <div class="card">
+                <h3>Total Guests</h3>
+                <h2 id="totalGuests">356</h2>
+            </div>
+
+            <div class="card">
+                <h3>Checked In</h3>
+                <h2>145</h2>
+            </div>
+
+            <div class="card">
+                <h3>Checked Out</h3>
+                <h2>211</h2>
+            </div>
+
+            <div class="card">
+                <h3>VIP Guests</h3>
+                <h2>18</h2>
+            </div>
+
+        </section>
+
+        <!-- Table -->
+
+        <section class="table-section">
+
+            <table>
+
+                <thead>
+
+                <tr>
+
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Phone</th>
+                    <th>Email</th>
+                    <th>Room</th>
+                    <th>Status</th>
+                    <th>Action</th>
+
+                </tr>
+
+                </thead>
+
+                <tbody id="guestTable">
+
+                <tr>
+
+                    <td>G001</td>
+                    <td>John Smith</td>
+                    <td>+1 555 241 500</td>
+                    <td>john@gmail.com</td>
+                    <td>203</td>
+                    <td><span class="checkedin">Checked In</span></td>
+
+                    <td>
+
+                        <button>Edit</button>
+                        <button>Delete</button>
+
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>G002</td>
+                    <td>Emily Brown</td>
+                    <td>+44 7780 123456</td>
+                    <td>emily@gmail.com</td>
+                    <td>105</td>
+                    <td><span class="checkedout">Checked Out</span></td>
+
+                    <td>
+
+                        <button>Edit</button>
+                        <button>Delete</button>
+
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>G003</td>
+                    <td>David Wilson</td>
+                    <td>+254 712345678</td>
+                    <td>david@gmail.com</td>
+                    <td>310</td>
+                    <td><span class="checkedin">Checked In</span></td>
+
+                    <td>
+
+                        <button>Edit</button>
+                        <button>Delete</button>
+
+                    </td>
+
+                </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="js/guests.js"></script>
+
+</body>
+  </html>
