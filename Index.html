@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>HOTELPRO | Hotel Management System</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background:linear-gradient(135deg,#0f172a,#1e3a8a,#2563eb);
+    color:#fff;
+    overflow:hidden;
+}
+
+.container{
+    text-align:center;
+    animation:fadeIn 1.2s ease;
+}
+
+.logo{
+    font-size:70px;
+}
+
+h1{
+    font-size:50px;
+    margin-top:15px;
+}
+
+p{
+    margin-top:10px;
+    font-size:18px;
+    color:#ddd;
+}
+
+.loader{
+    margin:35px auto;
+    width:70px;
+    height:70px;
+    border:6px solid rgba(255,255,255,.3);
+    border-top:6px solid #fff;
+    border-radius:50%;
+    animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+    100%{transform:rotate(360deg);}
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+</style>
+
+<script>
+setTimeout(function(){
+    window.location.href="login.html";
+},3000);
+</script>
+
+</head>
+<body>
+
+<div class="container">
+
+<div class="logo">🏨</div>
+
+<h1>HOTELPRO</h1>
+
+<p>Professional Hotel Management System</p>
+
+<div class="loader"></div>
+
+<p>Loading...</p>
+
+</div>
+
+</body>
+</html>
