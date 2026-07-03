@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Luxury Hotel Dashboard</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- Sidebar -->
+
+<div class="sidebar" id="sidebar">
+
+<div class="logo">
+
+<h2>🏨 HotelPro</h2>
+
+</div>
+
+<ul>
+
+<li>📊 Dashboard</li>
+
+<li>💰 Today's Profit</li>
+
+<li>👥 Customers Today</li>
+
+<li>🍽 Most Ordered Food</li>
+
+<li>🛏 Rooms</li>
+
+<li>📅 Reservations</li>
+
+<li>🛒 Orders</li>
+
+<li>💳 Payments</li>
+
+<li>💸 Withdraw Profit</li>
+
+<li>📈 Reports</li>
+
+<li>⚙ Settings</li>
+
+<li>🚪 Logout</li>
+
+</ul>
+
+</div>
+
+<!-- Main -->
+
+<div class="main">
+
+<!-- Top Navbar -->
+
+<div class="navbar">
+
+<div class="menu-btn" onclick="toggleMenu()">
+
+☰
+
+</div>
+
+<h2>Luxury Hotel Dashboard</h2>
+
+<div class="profile">
+
+<img src="https://i.pravatar.cc/45">
+
+</div>
+
+</div>
+
+<!-- Statistics -->
+
+<div class="stats">
+
+<div class="card">
+
+<h3>Today's Profit</h3>
+
+<h1>KSh 125,640</h1>
+
+</div>
+
+<div class="card">
+
+<h3>Customers</h3>
+
+<h1>248</h1>
+
+</div>
+
+<div class="card">
+
+<h3>Orders</h3>
+
+<h1>378</h1>
+
+</div>
+
+<div class="card">
+
+<h3>Most Ordered</h3>
+
+<h1>🍗 Chicken</h1>
+
+</div>
+
+</div>
+
+<!-- Search -->
+
+<div class="search">
+
+<input type="text" placeholder="Search food...">
+
+</div>
+
+<!-- Categories -->
+
+<div class="categories">
+
+<button class="active">All</button>
+
+<button>Breakfast</button>
+
+<button>Lunch</button>
+
+<button>Dinner</button>
+
+<button>Drinks</button>
+
+<button>Desserts</button>
+
+</div>
+
+<!-- Food Menu -->
+
+<div class="food-grid">
+
+<div class="food-card">
+
+<div class="badge">🔥 Popular</div>
+
+<img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500">
+
+<h3>Cheese Burger</h3>
+
+<p>KSh 650</p>
+
+<button>Order Now</button>
+
+</div>
+
+<div class="food-card">
+
+<img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500">
+
+<h3>Pizza</h3>
+
+<p>KSh 1,200</p>
+
+<button>Order Now</button>
+
+</div>
+
+<div class="food-card">
+
+<div class="badge">⭐ Best Seller</div>
+
+<img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?w=500">
+
+<h3>Grilled Chicken</h3>
+
+<p>KSh 950</p>
+
+<button>Order Now</button>
+
+</div>
+
+<div class="food-card">
+
+<img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=500">
+
+<h3>Beef Steak</h3>
+
+<p>KSh 1,450</p>
+
+<button>Order Now</button>
+
+</div>
+
+<div class="food-card">
+
+<img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=500">
+
+<h3>Sea Food</h3>
+
+<p>KSh 1,850</p>
+
+<button>Order Now</button>
+
+</div>
+
+<div class="food-card">
+
+<img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=500">
+
+<h3>Coffee</h3>
+
+<p>KSh 250</p>
+
+<button>Order Now</button>
+
+</div>
+
+<div class="food-card">
+
+<img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=500">
+
+<h3>Fresh Juice</h3>
+
+<p>KSh 300</p>
+
+<button>Order Now</button>
+
+</div>
+
+<div class="food-card">
+
+<img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=500">
+
+<h3>Chocolate Cake</h3>
+
+<p>KSh 450</p>
+
+<button>Order Now</button>
+
+</div>
+
+</div>
+
+<!-- Recent Orders -->
+
+<div class="orders">
+
+<h2>Recent Orders</h2>
+
+<table>
+
+<tr>
+
+<th>Customer</th>
+
+<th>Food</th>
+
+<th>Table</th>
+
+<th>Status</th>
+
+</tr>
+
+<tr>
+
+<td>John</td>
+
+<td>Pizza</td>
+
+<td>5</td>
+
+<td>✅ Served</td>
+
+</tr>
+
+<tr>
+
+<td>Sarah</td>
+
+<td>Burger</td>
+
+<td>2</td>
+
+<td>🍳 Preparing</td>
+
+</tr>
+
+<tr>
+
+<td>Mike</td>
+
+<td>Chicken</td>
+
+<td>7</td>
+
+<td>🚚 Delivering</td>
+
+</tr>
+
+</table>
+
+</div>
+
+<footer>
+
+Luxury Hotel Dashboard © 2026
+
+</footer>
+
+</div>
+
+<script>
+
+function toggleMenu(){
+
+document.getElementById("sidebar").classList.toggle("active");
+
+}
+
+</script>
+
+</body>
+
+  </html>
